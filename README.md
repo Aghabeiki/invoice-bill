@@ -7,7 +7,8 @@
 ```sh
 $ npm install --save invoice-bill
 ```
-
+## Docs
+https://raianraika.github.io/invoice-bill/
 ## Usage
 
 ```js
