@@ -1,4 +1,4 @@
-# invoice-bill [![NPM version](https://badge.fury.io/js/invoice-bill.svg)](https://npmjs.org/package/invoice-bill) [![Build Status](https://travis-ci.org/Amin.A/invoice-bill.svg?branch=master)](https://travis-ci.org/Amin.A/invoice-bill)
+# invoice-bill [![NPM version](https://badge.fury.io/js/invoice-bill.svg)](https://npmjs.org/package/invoice-bill) [![Build Status](https://travis-ci.org/RaianRaika/invoice-bill.svg?branch=master)](https://travis-ci.org/RaianRaika/invoice-bill)
 
 > Invoice bill and generate PDF file
 
