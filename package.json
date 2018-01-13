@@ -1,0 +1,44 @@
+{
+  "name": "invoice-bill",
+  "version": "1.0.0",
+  "description": "Invoice bill and generate PDF file",
+  "main": "./lib/Bill.js",
+  "scripts": {
+    "test": "npm run eslint && nyc --all --reporter=html --reporter=text --lines 100 mocha test/unit/**.test.js",
+    "eslint": "./node_modules/.bin/eslint .",
+    "gen-docs": "rm -rf docs && node_modules/jsdoc/jsdoc.js -R README.md -r -c jsdoc.json lib/** -d docs&&node_modules/opn-cli/cli.js docs/index.html",
+    "open-docs": "node_modules/opn-cli/cli.js docs/index.html ",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "author": "Amin Aghabeiki",
+  "license": "MIT",
+  "dependencies": {
+    "currency-symbol-map": "4.0.3",
+    "html-pdf": "2.2.0",
+    "jade": "1.11.0"
+  },
+  "engines": {
+    "node": "^8.9.3",
+    "npm": "5.6.0"
+  },
+  "devDependencies": {
+    "coveralls": "3.0.0",
+    "docdash": "0.4.0",
+    "documentation": "5.3.5",
+    "eslint": "4.15.0",
+    "eslint-config-google": "0.9.1",
+    "is-html": "1.1.0",
+    "jsdoc": "3.5.5",
+    "mocha": "4.1.0",
+    "mockery": "2.1.0",
+    "nyc": "11.4.1",
+    "opn-cli": "3.1.0",
+    "should": "13.2.1",
+    "tui-jsdoc-template": "1.2.2"
+  },
+  "nyc": {
+    "include": [
+      "lib"
+    ]
+  }
+}
