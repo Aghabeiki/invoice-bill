@@ -1,1 +1,17 @@
-after_success: npm run coverage
+language: node_js
+node_js:
+  - "8.9.3"
+sudo: false
+cache:
+  directories:
+    - node_modules
+before_install:
+  # Skip updating shrinkwrap / lock
+  - "npm config set shrinkwrap false"
+
+  # Update Node.js modules
+  - "test ! -d node_modules || npm prune"
+  - "test ! -d node_modules || npm rebuild"
+script:
+  - "npm run test"
+after_script: "npm run coverage"
