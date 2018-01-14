@@ -22,7 +22,7 @@ describe('# Bill Class unit test', () => {
     const test = bill.renderToHTML();
     test.should.be.ok();
     isHtml(test).should.be.ok();
-    bill.renderPDF(__dirname, 'test.pdf', {
+    bill.renderPDF('/tmp/', 'test.pdf', {
       'format': 'Letter',
       'orientation': 'portrait',
     }).then((filePath) => {
