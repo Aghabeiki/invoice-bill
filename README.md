@@ -3,7 +3,7 @@
 > Invoice bill manager.<br>
 >Create your checkout invoice-bill, add item(s) details,<br>
 >and export them in HTML and/or PDF format(s).
->also the rendering is based a JADE template file so u can edit your template and use your own bill template. 
+>also the rendering is based a JADE template file so you can use/edit your template and make your bill with your template. 
 
 ## Installation
 
@@ -53,7 +53,7 @@ And also working example is available [in](https://github.com/RaianRaika/invoice
 * fileName       string	<optional>  The filename, if not pass a name with title and a time stamp will be created.
 
 ### Note:
- For PDf rendering the module [`html-pdf `](https://github.com/marcbachmann/node-html-pdf) used,<br>
+ For PDf rendering the module [`html-pdf `](https://www.npmjs.com/package/html-pdf) used,<br>
  and the rendering options is available [here](https://www.npmjs.com/package/html-pdf#options).
 
 ## Running the tests
