@@ -1,6 +1,7 @@
 'use strict';
 /**
- * @tutorial A working sample
+ * @tutorial
+ * @desc A working example of module usage.
  */
 const InvoiceBill = require('../lib/Bill');
 /* eslint-disable max-len*/
@@ -10,11 +11,11 @@ const sample = new InvoiceBill({
   billIDGenerator: {preFlightValue: 1, mode: 'padding'},
   currency: 'MYR',
   from: {issuer: 'Amin Aghabeiki', phoneNumber: '+60127623452'},
-  to: 'mamad',
+  to: 'some body',
   logo: logo,
 });
 sample.newRecords({itemName: 'test', itemBasePrice: 10});
-sample.newRecords({itemName: 'item2', itemBasePrice: 5, itemCount: 2, discount: 5});
+sample.newRecords({itemName: 'test2', itemBasePrice: 5, itemCount: 2, discount: 5});
 const test = sample.renderToHTML();
 require('fs').writeFileSync('test.html', test);
 sample.renderPDF(__dirname, {format: 'Letter', orientation: 'landscape'})
